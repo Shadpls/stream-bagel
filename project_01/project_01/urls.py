@@ -24,4 +24,5 @@ urlpatterns = [
     # this will take url, slice off what it initially detects, then sends the rest to the views of our other app(s)
     # views.py will be present in
     path("", include("home.urls")),
+    path('api-auth', include ('rest_framework.urls'))
 ]
